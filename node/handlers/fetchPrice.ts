@@ -9,8 +9,8 @@ export async function fetchPrice(ctx: Context, next: Next) {
 
   const currentProfile = (await profileSystem.getProfileInfo(
     {
-      email: body.context.email,
-      userId: body.context.email,
+      email: body.item.email,
+      //userId: body.context.email,
     },
     'priceTables'
   )) as Profile

@@ -12,7 +12,8 @@
     "@vtex/api": "6.45.3",
     "@vtex/test-tools": "^1.0.0",
     "@vtex/tsconfig": "^0.5.6",
-    "typescript": "3.9.7"
+    "typescript": "3.9.7",
+    "vtex.external-prices-node-unilever": "https://ale--kevinseller8672.myvtex.com/_v/private/typings/linked/v1/vtex.external-prices-node-unilever@0.3.0+build1635530029/public/_types/react"
   },
   "scripts": {
     "lint": "tsc --noEmit --pretty"
