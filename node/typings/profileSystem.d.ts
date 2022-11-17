@@ -28,6 +28,7 @@ export interface Profile {
   homePhone?: string
   businessPhone?: string
   isCorporate?: boolean
+  isPJ?: string
   corporateName?: string
   corporateDocument?: string
   stateRegistration?: string

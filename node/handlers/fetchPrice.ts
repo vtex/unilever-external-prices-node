@@ -16,7 +16,7 @@ export async function fetchPrice(ctx: Context, next: Next) {
           email: body.context.email,
           userId: body.context.email,
         },
-        'priceTables'
+        'priceTables,isCorporate'
       )) as Profile
     } catch (e) {
       ctx.vtex.logger.warn({
@@ -28,9 +28,11 @@ export async function fetchPrice(ctx: Context, next: Next) {
     }
   }
 
+  const priceTableDefault = currentProfile?.isPJ === 'True' ? '2' : '1'
+
   const price = await pricing.getPrice(
     body.item.skuId,
-    currentProfile?.priceTables ?? '1'
+    currentProfile?.priceTables ?? priceTableDefault
   )
 
   if (!price) {
