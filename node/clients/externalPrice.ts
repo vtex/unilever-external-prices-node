@@ -1,5 +1,5 @@
 import type { InstanceOptions, IOContext } from '@vtex/api'
-import { ExternalClient, NotFoundError, TooManyRequestsError } from '@vtex/api'
+import { ExternalClient, TooManyRequestsError } from '@vtex/api'
 
 import type { InputItem } from '../typings/externalPrice'
 import ENV from '../env'
