@@ -1,7 +1,7 @@
 {
   "name": "external-prices-node-dartel",
   "vendor": "vtex",
-  "version": "0.0.1",
+  "version": "0.7.4",
   "title": "External Prices Node App",
   "description": "A reference app for consulting external prices.",
   "categories": [],
