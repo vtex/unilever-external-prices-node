@@ -1,7 +1,7 @@
 {
   "name": "external-prices-node-unilever",
   "vendor": "vtex",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "title": "External Prices Node App",
   "description": "A reference app for consulting external prices.",
   "categories": [],
