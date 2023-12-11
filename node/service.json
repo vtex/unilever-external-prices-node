@@ -1,10 +1,14 @@
 {
-  "memory": 256,
+  "memory": 512,
   "ttl": 10,
   "timeout": 2,
   "minReplicas": 2,
-  "maxReplicas": 4,
+  "maxReplicas": 120,
   "workers": 1,
+  "cpu": {
+    "type": "shared",
+    "value": 20
+  },
   "routes": {
     "price": {
       "path": "/_v/external-prices/price",
